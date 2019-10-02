@@ -1,0 +1,241 @@
+/* ----- Global------ */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+:root{
+    --main-black: #1E202B;
+    --main-blue: #08AEEA;
+    --main-green: #2AF598;
+    --main-gradient: linear-gradient(to right, var(--main-blue), var(--main-green))
+}
+html{
+    font-family: Source Sans Pro, sans-serif;
+}
+
+h1{
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--main-black);
+}
+h2{
+    font-size: 38px;
+    font-weight: 400;
+    color: var(--main-black);
+}
+.btnWhite{
+    display: inline-block;
+    text-decoration: none;
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 135px;
+    background: -webkit-linear-gradient(top right, #2af598, #08aeea);
+    background: linear-gradient(top right, #2af598, #08aeea);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.btnGroup{
+    position: relative;
+    z-index: 1;
+}
+.whiteBG{
+    position: absolute;
+    top:0;
+    background: white;
+    height: 60px;
+    width: 200px;
+    border-radius: 3px;
+    z-index: -1;
+}
+.btnColor{
+    display: inline-block;
+    text-decoration: none;
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: var(--main-gradient);
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 3px;
+}
+
+.btnGreen{
+    color: var(--main-green);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+span{
+    color: var(--main-green)
+}
+
+/* -----header/nav------ */
+header{
+    position: relative;
+    background-image: url(images/deadpoolheader.png);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 900px;
+    width:90%;
+    padding: 0 5%;
+}
+nav{
+    display: inline-block;
+    width: 100%;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    line-height: 100px;
+}
+.logo{
+    font-weight: 500;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+nav ul{
+    float: right;
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-left: 50px;
+}
+header h1{
+    color: white;
+    width: 55%;
+    margin: 90px 0 40px 0;
+}
+
+header p{
+    color: white;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+.ipad{
+    width: 60%;
+    position: absolute;
+    right: 0;
+    bottom: -60px;
+}
+.iphone{
+    width: 40%;
+    position: absolute;
+    right: 4%;
+    top: 150px;
+    display: none;
+}
+
+.mobile{
+    display: none;
+}
+label{
+    margin: 0 40px 0 0;
+    font-size: 25px;
+    color: white;
+    position: absolute;
+    top: 32px;
+    right: 0;
+    cursor: pointer;
+}
+#toggle{
+    display: none;
+}
+.mobile ul {
+    text-align: center;
+    width: 100%;
+    display: none;
+    margin: 0;
+    background: rgba(255,255,255,0.1);
+    /* z-index: 4; */
+}
+.mobile ul li{
+    margin: 0;
+    width: 100%;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+#toggle:checked ~ ul{
+    display: block;
+}
+
+/* -----new 4k movies------ */
+
+.new4Kmovies{
+    width: 90%;
+    padding: 0 5%;
+    margin-bottom: 160px;
+}
+
+.sectionTitle h2, .sectionTitle a{
+    display: inline-block;
+    vertical-align: middle;
+}
+.sectionTitle a{
+    margin-left: 20px;
+}
+.sectionTitle{
+    margin: 50px 0 20px 0;
+}
+.new4Kmovies ul{
+    display: flex;
+    width: 100%;
+    list-style: none;
+}
+
+.new4Kmovies ul li img{
+    width: 92%;
+    margin: 4%;
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.16)
+}
+
+/* -----Call to action------ */
+.callToAction{
+    text-align: center;
+    width: 60%;
+    margin: 0 auto 200px auto;
+}
+.callToAction h1{
+    margin-bottom: 40px;
+}
+
+/* -----footer------ */
+footer a{
+    text-decoration: none;
+    color: var(--main-black);
+}
+footer ul {
+    list-style: none;
+    float: right;
+}
+footer ul li{
+    display: inline-block;
+    margin-left: 50px;
+}
+
+.copy a, .copy p{
+    display: inline-block;
+    vertical-align: middle;
+}
+ footer{
+     width: 90%;
+     padding: 0 5%;
+ }
+
+ footer ul, .copy{
+     line-height: 80px;
+     display: inline-block;
+ }
